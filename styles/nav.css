@@ -1,0 +1,73 @@
+
+.comic-font {
+     font-family: "Comic Relief", system-ui;
+     font-weight: 700;
+     font-style: normal;
+
+ }
+
+ .space-font {
+     font-family: "Space Grotesk", sans-serif;
+     font-optical-sizing: auto;
+ }
+
+
+.nav-bar {
+     display: flex;
+     /* flex-direction:column; */
+     justify-content: space-between;
+     margin-bottom: 30px;
+     align-items: center;
+     /* text-align: center; */
+
+
+ }
+
+ .nav-bar h2 {
+     margin-left: 35px;
+ }
+
+ .nav-bar ul {
+     margin-right: 45px;
+ }
+
+ .brand {
+     font-size: 40px;
+ }
+
+ .color {
+     color: rgba(17, 28, 234, 0.653);
+     text-shadow: 3px 4px 10px rgba(8, 4, 4, 0.415);
+     font-size: 55px;
+ }
+
+ .b {
+     font-size: 70px;
+     color: rgb(152, 0, 0);
+ }
+
+ .text {
+     font-size: 20px;
+ }
+
+ .colors {
+     color: rgb(232, 91, 39);
+ }
+
+ nav>ul {
+     display: flex;
+     /* flex-direction: column;   */
+     flex-wrap: wrap;
+     gap: 55px;
+ }
+
+ nav ul a {
+     list-style: none;
+     text-decoration: none;
+     color: black;
+     font-size: 30px;
+ }
+
+ nav li {
+     list-style: none;
+ }

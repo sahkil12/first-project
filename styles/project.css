@@ -13,12 +13,9 @@
 
  .nav-bar {
      display: flex;
-     /* flex-direction:column; */
      justify-content: space-between;
      margin-bottom: 30px;
      align-items: center;
-     /* text-align: center; */
-
 
  }
 
@@ -57,12 +54,18 @@
  }
 
  .colors {
-     color: rgb(232, 91, 39);
+     color: rgb(255, 105, 50);
+     background-color: rgba(8, 8, 10, 0.933);
+     padding: 6px 14px 7px 14px;
+     border-radius: 5px;
+ }
+
+ .colors:hover {
+     box-shadow: 6px 7px 15px rgba(111, 110, 110, 0.724);
  }
 
  nav>ul {
      display: flex;
-     /* flex-direction: column;   */
      flex-wrap: wrap;
      gap: 55px;
  }
@@ -112,17 +115,19 @@
  .btn {
 
      background-color: black;
-     color: white;
+     color: rgb(255, 105, 50);
      padding: 12px 25px 12px 25px;
      border: 2px solid rgb(0, 0, 0);
      border-radius: 5px;
-     font-size: 15px;
+     font-size: 19px;
+     font-weight: 800;
  }
 
  .btn:hover {
 
      box-shadow: 6px 7px 15px rgba(111, 110, 110, 0.724);
-     font-size: 15px;
+     font-size: 18.5px;
+     font-weight: 800;
      text-decoration: underline white;
  }
 
@@ -143,51 +148,177 @@
          flex-direction: column;
      }
 
-     nav>ul{
-        flex-direction: column;
-        text-align: center;
-     }
-     .banner{
-
-        margin-right: 5px;
-        margin-left: 5px;
-        flex-direction: column;
+     nav>ul {
+         flex-direction: column;
+         text-align: center;
      }
 
-     .my-img{
-        padding-top: 30px;
-        margin-top: 20px;
+     .banner {
+
+         margin-right: 5px;
+         margin-left: 5px;
+         flex-direction: column;
      }
 
-     .banner-head{
-        width: 100%;
-        margin-left: 0px;
+     .my-img {
+         padding-top: 30px;
+         margin-top: 20px;
      }
+
+     .banner-head {
+         width: 100%;
+         margin-left: 0px;
+     }
+
      .brand {
-     font-size: 30px;
+         font-size: 30px;
+         text-align: center;
+     }
+
+     .color {
+         font-size: 30px;
+     }
+
+     .b {
+         font-size: 40px;
+     }
+
+     nav ul a {
+         font-size: 22px;
+     }
+
+     nav ul {
+         gap: 30px;
+     }
+
+     .nav-bar h2 {
+         margin-left: 0px;
+     }
+
+     .brand-subtitle {
+         padding-bottom: 5px;
+     }
+ }
+
+
+ /* second layer collection style  */
+
+ .collection {
+     margin-top: 100px;
+ }
+
+ .main-container {
+     display: flex;
+     justify-content: center;
+     margin-top: 30px;
+
+ }
+
+ .card-container {
+     width: 90%;
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 40px;
+     margin: 10px;
+
+ }
+
+ .style-card>img {
+     height: auto;
+     width: 100%;
+     border-radius: 10px;
+
+ }
+
+ .style-card>img:hover {
+     box-shadow: 8px 7px 15px rgba(1, 1, 1, 0.853);
+     width: 95%;
+ }
+
+ .style-card {
+     border: 15px solid rgba(21, 113, 121, 0.535);
+     box-shadow: 8px 7px 15px rgba(198, 113, 192, 0.776);
+     border-radius: 10px;
+     width: auto;
+     padding: 20px;
+     background-color: rgb(255, 255, 255);
+ }
+
+ .abouts {
+     width: 70%;
+     text-align: start;
+     font-family: "Manrope", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: 25px;
+ }
+
+ .price {
+
+     font-family: "Manrope", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: 30px;
+ }
+
+ .subtitle-new {
+
+     font-size: 25px;
+     font-weight: 600;
      text-align: center;
+
+
  }
 
- .color{
-    font-size: 30px;
- }
- .b{
-    font-size: 40px;
- }
- 
- nav ul a {
-    font-size: 22px;
+ .heading {
+     font-size: 40px;
+     font-family: "Josefin Sans", sans-serif;
+     font-optical-sizing: auto;
+     text-align: center;
+     color: rgb(255, 113, 61);
+     background-color: rgba(13, 13, 16, 0.908);
+     padding-bottom: 10px;
+     padding-top: 10px;
+     border-radius: 0px;
+     margin: 0 auto;
+
  }
 
- nav ul{
-    gap: 30px;
+ .heading:hover {
+     border-radius: 5PX;
+     font-size: 40px;
+     font-family: "Josefin Sans", sans-serif;
+     font-optical-sizing: auto;
+     box-shadow: 8px 7px 15px rgba(55, 55, 55, 0.776);
  }
-.nav-bar h2{
-    margin-left: 0px;
+
+ .buy {
+
+     background-color: black;
+     color: white;
+     padding: 12px 25px 12px 25px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 5px;
+     font-size: 17px;
+     font-weight: 700;
+
+ }
+
+ .buy:hover {
+
+     box-shadow: 8px 7px 15px rgba(111, 110, 110, 0.776);
+     font-size: 17px;
+     text-decoration: underline white;
+ }
+
+ /* media quiyere */
+
+ @media screen and (max-width:576px) {
+
+.card-container{
+    grid-template-columns: repeat(1, 1fr);
 }
 
-.brand-subtitle {
-    padding-bottom:  5px;
-}
- }
 
+ }
