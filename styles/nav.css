@@ -14,13 +14,12 @@
 
 .nav-bar {
      display: flex;
-     /* flex-direction:column; */
      justify-content: space-between;
      margin-bottom: 30px;
      align-items: center;
-     /* text-align: center; */
-
-
+    background-image: linear-gradient(#5ac3b9b9, rgba(65, 179, 169, 0.769));
+     box-shadow: 8px 9px 20px rgba(0, 0, 0, 0.649);
+    
  }
 
  .nav-bar h2 {
@@ -51,12 +50,16 @@
  }
 
  .colors {
-     color: rgb(232, 91, 39);
+     color: rgb(255, 105, 50);
+     background-color: rgba(8, 8, 10, 0.933);
+     padding: 6px 14px 7px 14px;
+     border-radius: 5px;
  }
-
+.colors:hover {
+     box-shadow: 6px 7px 15px rgba(111, 110, 110, 0.724);
+}
  nav>ul {
      display: flex;
-     /* flex-direction: column;   */
      flex-wrap: wrap;
      gap: 55px;
  }
@@ -71,3 +74,23 @@
  nav li {
      list-style: none;
  }
+
+ @media screen and (max-width:576px) {
+
+     .nav-bar {
+         flex-direction: column;
+     }
+
+     nav>ul {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     .banner {
+
+         margin-right: 5px;
+         margin-left: 5px;
+         flex-direction: column;
+     }
+
+    }
