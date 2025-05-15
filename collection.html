@@ -5,8 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B4 Style collection </title>
     <link rel="stylesheet" href="styles/nav.css">
+
+    <style>
+.collection {
+     margin-top: 100px;
+ }
+
+ .main-container {
+     display: flex;
+     justify-content: center;
+     margin-top: 30px;
+
+ }
+
+ .card-container {
+     width: 90%;
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 40px;
+     margin: 10px;
+
+ }
+
+ .style-card>img {
+     height: auto;
+     width: 100%;
+     border-radius: 10px;
+
+ }
+
+ .style-card>img:hover {
+     box-shadow: 8px 7px 15px rgba(1, 1, 1, 0.853);
+     width: 95%;
+ }
+
+ .style-card {
+     border: 15px solid rgba(21, 113, 121, 0.535);
+     box-shadow: 8px 7px 15px rgba(198, 113, 192, 0.776);
+     border-radius: 10px;
+     width: auto;
+     padding: 20px;
+     background-color: rgb(255, 255, 255);
+ }
+
+ .abouts {
+     width: 70%;
+     text-align: start;
+     font-family: "Manrope", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: 25px;
+ }
+
+ .price {
+
+     font-family: "Manrope", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: 30px;
+ }
+
+ .subtitle-new {
+
+     font-size: 25px;
+     font-weight: 600;
+     text-align: center;
+
+
+ }
+
+ .heading {
+     font-size: 40px;
+     font-family: "Josefin Sans", sans-serif;
+     font-optical-sizing: auto;
+     text-align: center;
+     color: rgb(255, 90, 29);
+     background-color: rgba(255, 255, 255, 0.908);
+     padding-bottom: 10px;
+     padding-top: 10px;
+     border-radius: 0px;
+     margin: 0 auto;
+
+ }
+
+ .heading:hover {
+     border-radius: 5PX;
+     font-size: 40px;
+     font-family: "Josefin Sans", sans-serif;
+     font-optical-sizing: auto;
+     box-shadow: 8px 7px 15px rgba(55, 55, 55, 0.776);
+ }
+
+ .buy {
+
+     background-color: black;
+     color: white;
+     padding: 12px 25px 12px 25px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 5px;
+     font-size: 17px;
+     font-weight: 700;
+
+ }
+
+ .buy:hover {
+
+     box-shadow: 8px 7px 15px rgba(111, 110, 110, 0.776);
+     font-size: 17px;
+     text-decoration: underline white;
+ }
+
+ /* media quiyere */
+
+ @media screen and (max-width:576px) {
+
+.card-container{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+ }
+    </style>
+
 </head>
 <body>
+
+
     <nav class="nav-bar">
 
             <h2 class="comic-font brand"> <span class="color"><span class="b">B</span>4</span> STYLE</h2>
@@ -19,7 +144,7 @@
                     <a href="about.html">About</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html">Contract</a>
                 </li>
                 <li>
                     <a class="colors" href="login.html">Login</a>
@@ -28,5 +153,152 @@
 
 
         </nav>
+
+        <main>
+
+        <section class="space-font collection">
+
+            <div class="new-collection">
+
+                <h1 class="heading ">OUR COLLECTION</h1>
+                <p class="subtitle-new space-font">A blend of comfort, trend, and attitude—crafted for those who live with style.
+
+</p>
+
+<hr>    
+            </div>
+
+           <div class="main-container">
+
+             <div class="card-container">
+
+                <div class="style-card">
+                    <img src="images/black.png" alt="">
+                    <h1 class="product">Black Drop-Shoulder </h1>
+                    <h2 class="price">Price :350$ </h2>
+                    <button class="buy" type="button">BUY NOW</button>
+                </div>
+
+                <div class="style-card">
+                    <img src="images/green.png" alt="">
+                    <h1 class="product" >Green Drop-Shoulder</h1>
+
+                    <h2 class="price">Price :350$ </h2>
+                    <button class="buy" type="button">BUY NOW</button>
+                </div>
+
+                <div class="style-card">
+                    <img src="images/yellow.png" alt="">
+                    <h1 class="product">Yellow Drop-Shoulder</h1>
+                   <h2 class="price">Price :350$ </h2>
+                  <button class="buy" type="button">BUY NOW</button>
+                </div>
+
+
+                <div class="style-card">
+                    <img src="images/white.png" alt="">
+                    <h1 class="product">White Drop-Shoulder</h1>
+                   <h2 class="price">Price :350$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+
+
+                <div class="style-card">
+                    <img src="images/blue.png" alt="">
+                    <h1 class="product">Blue Drop-Shoulder</h1>
+                  <h2 class="price">Price :350$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+
+                <div class="style-card">
+                    <img src="images/chocholate.png" alt="">
+                    <h1 class="product">Chocolate Drop-Shoulder</h1>
+                  <h2 class="price">Price :350$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+                <div class="style-card">
+                    <img src="images/gray.png" alt="">
+                    <h1 class="product">Gray Drop-Shoulder</h1>
+                  <h2 class="price">Price :350$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+                <div class="style-card">
+                    <img src="images/t-shirt.jpeg" alt="">
+                    <h1 class="product">New T-Shirt</h1>
+                  <h2 class="price">Price :300$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+                <div class="style-card">
+                    <img src="images/2 color.png" alt="">
+                    <h1 class="product">New Drop-Shoulder</h1>
+                  <h2 class="price">Price :380$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+                <div class="style-card">
+                    <img src="images/baston.jpg" alt="">
+                    <h1 class="product">New Drop-Shoulder</h1>
+                  <h2 class="price">Price :400$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+                <div class="style-card">
+                    <img src="images/blue -beston.jpg" alt="">
+                    <h1 class="product"> New Drop-Shoulder</h1>
+                  <h2 class="price">Price :400$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+                <div class="style-card">
+                    <img src="images/black-t.jpg" alt="">
+                    <h1 class="product">Black T-Shirt</h1>
+                  <h2 class="price">Price :300$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+                <div class="style-card">
+                    <img src="images/cho-polo.jpg" alt="">
+                    <h1 class="product">New Polo-Shirt</h1>
+                  <h2 class="price">Price :580$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+                <div class="style-card">
+                    <img src="images/nevy-polo.jpg" alt="">
+                    <h1 class="product">New Polo-Shirt</h1>
+                  <h2 class="price">Price :580$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+                <div class="style-card">
+                    <img src="images/black-polo.jpg" alt="">
+                    <h1 class="product">New Polo-Shirt</h1>
+                  <h2 class="price">Price :580$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+                <div class="style-card">
+                    <img src="images/green-milando.jpg" alt="">
+                    <h1 class="product">New Drop Shoulder</h1>
+                  <h2 class="price">Price :400$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+                <div class="style-card">
+                    <img src="images/red-milando.jpg" alt="">
+                    <h1 class="product">New Drop Shoulder</h1>
+                  <h2 class="price">Price :400$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+                <div class="style-card">
+                    <img src="images/diferent.jpeg" alt="">
+                    <h1 class="product">New T-Shirt</h1>
+                  <h2 class="price">Price :380$ </h2>
+                   <button class="buy" type="button">BUY NOW</button>
+                </div>
+          
+
+            </div>
+
+           </div>
+
+
+
+        </section>
+
+    </main>
+
 </body>
 </html>
