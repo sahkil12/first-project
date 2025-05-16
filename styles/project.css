@@ -1,4 +1,5 @@
  /* shared font style  */
+ 
  .comic-font {
      font-family: "Comic Relief", system-ui;
      font-weight: 800;
@@ -16,7 +17,6 @@
      justify-content: space-between;
      margin-bottom: 30px;
      align-items: center;
-
  }
 
  .header {
@@ -106,7 +106,6 @@
  }
 
  .banner-head {
-     /* max-width: 500px; */
      width: 40%;
      margin-left: 60px;
      margin-top: 20px;
@@ -142,9 +141,314 @@
  }
 
 
+ /* second layer collection style  */
+
+ .collection {
+     margin-top: 100px;
+ }
+
+ .main-container {
+     display: flex;
+     justify-content: center;
+     margin-top: 30px;
+ }
+
+ .card-container {
+     width: 90%;
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 40px;
+     margin: 10px;
+ }
+
+ .style-card>img {
+     height: auto;
+     width: 100%;
+     border-radius: 10px;
+ }
+
+ .style-card>img:hover {
+     box-shadow: 8px 7px 15px rgba(1, 1, 1, 0.853);
+     width: 95%;
+ }
+
+ .style-card {
+     box-shadow: 8px 7px 15px rgba(198, 113, 192, 0.776);
+     border-radius: 10px;
+     width: auto;
+     padding: 20px;
+     background-color: rgba(183, 233, 253, 0.674);
+ }
+
+ .blue {
+     background-color: rgba(163, 237, 226, 0.574);
+ }
+
+ .abouts {
+     width: 70%;
+     text-align: start;
+     font-family: "Manrope", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: 25px;
+ }
+
+ .price {
+
+     font-family: "Manrope", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: 30px;
+ }
+
+ .subtitle-new {
+
+     font-size: 25px;
+     font-weight: 600;
+     text-align: center;
+ }
+
+ .heading {
+     font-size: 40px;
+     font-family: "Josefin Sans", sans-serif;
+     font-optical-sizing: auto;
+     text-align: center;
+     color: rgb(255, 113, 61);
+     background-color: rgba(13, 13, 16, 0.908);
+     padding-bottom: 10px;
+     padding-top: 10px;
+     border-radius: 0px;
+     margin: 0 auto;
+ }
+
+ .heading:hover {
+     border-radius: 5PX;
+     font-size: 40px;
+     font-family: "Josefin Sans", sans-serif;
+     font-optical-sizing: auto;
+     box-shadow: 8px 7px 15px rgba(55, 55, 55, 0.776);
+ }
+
+ .buy {
+
+     background-color: black;
+     color: white;
+     padding: 12px 25px 12px 25px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 5px;
+     font-size: 17px;
+     font-weight: 700;
+ }
+
+ .buy:hover {
+
+     box-shadow: 8px 7px 15px rgba(111, 110, 110, 0.776);
+     font-size: 17px;
+     text-decoration: underline white;
+ }
+
+
+ /* coustomer review section */
+
+ .Customers {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .testimonials {
+     padding: 60px 20px;
+     background-color: #5cc4c4ad;
+     text-align: center;
+     width: 60%;
+     margin-top: 80px;
+     border-radius: 10px;
+     box-shadow: 4px 5px 11px rgba(0, 0, 0, 0.539);
+     margin-bottom: 90px;
+ }
+
+ .testimonials h2 {
+     font-size: 35px;
+     font-weight: 800;
+     margin-bottom: 35px;
+     text-decoration: underline;
+ }
+
+ .testimonial-box {
+     display: flex;
+     justify-content: center;
+     gap: 45px;
+     flex-wrap: wrap;
+ }
+
+ .testimonial {
+     background: rgb(219, 242, 243);
+     padding: 20px;
+     border-radius: 10px;
+     width: 285px;
+     box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.29);
+ }
+
+ .testimonial p {
+     font-style: italic;
+     font-size: 19px;
+ }
+
+ .testimonial h4 {
+     margin-top: 10px;
+     color: #3e3e3e;
+     font-size: 20px;
+ }
+
+
+ /* support section style  */
+
+ .help {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 100px;
+ }
+
+ .sections {
+     font-size: 40px;
+     text-align: center;
+     margin-bottom: 45px;
+     font-family: "Azeret Mono", monospace;
+     font-weight: 800;
+     color: rgb(43, 43, 43);
+     
+ }
+
+ .need-support {
+     width: 60%;
+     text-align: center;
+     height: 300px;
+     background-image: linear-gradient(0.00deg, rgba(9, 9, 9, 0.581) 3.482%, rgba(16, 16, 16, 0.63) 101.632%), url("../images/handshake.jpg");
+     background-size: 100%;
+     color: #000000;
+     border-radius: 16px;
+     background-image: linear-gradient("#000000 , #000000");
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .support h2 {
+
+     color: rgb(247, 247, 247);
+     font-size: 34px;
+     font-weight: bold;
+     font-family: "Azeret Mono", monospace;
+     font-optical-sizing: auto;
+ }
+
+ .support p {
+     line-height: 20px;
+     font-size: 16px;
+     color: rgba(240, 248, 255, 0.849);
+     font-family: "Azeret Mono", monospace;
+     font-optical-sizing: auto;
+ }
+
+ .middle {
+
+     width: 80%;
+     padding-bottom: 30px;
+
+ }
+
+ .search {
+     width: 50%;
+     border-radius: 8px;
+     font-size: 15px;
+     font-weight: 600;
+     height: 50px;
+     margin-right: 10px;
+     padding-left: 20px;
+     border: none;
+
+ }
+
+ .submit {
+     height: 52px;
+     padding-left: 15px;
+     padding-right: 15px;
+     border-radius: 8px;
+     width: 95px;
+     font-size: 19px;
+     font-weight: 600;
+     font-family: "Azeret Mono", monospace;
+     border: none;
+ }
+
+ .submit a {
+     color: black;
+     text-decoration: none;
+ }
+
+
+ /* main footer styles section */
+
+ .footer-part {
+     text-align: center;
+     background-color: rgba(21, 21, 21, 0.948);
+     height: 150px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 100px;
+     box-shadow: 9px 9px 19px rgba(0, 0, 0, 0.601);
+     margin-bottom: 10px;
+ }
+
+ .big {
+     font-size: 28px;
+     font-family: "Azeret Mono", monospace;
+     color: rgb(255, 64, 6);
+ }
+
+ body{
+    margin: 2px;
+ }
+
+ .last {
+
+     display: flex;
+     width: 70%;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .copy {
+     font-size: 25px;
+     font-weight: 600;
+     font-family: "Azeret Mono", monospace;
+     color: rgb(255, 64, 6);
+ }
+
+ .icons {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .icons>a {
+     text-align: center;
+     margin-left: 30px;
+
+
+ }
+
+
+/* media quary section part */
+
+ 
  @media screen and (max-width:576px) {
 
-     .nav-bar {
+ .nav-bar {
          flex-direction: column;
      }
 
@@ -198,127 +502,67 @@
      .brand-subtitle {
          padding-bottom: 5px;
      }
- }
 
 
- /* second layer collection style  */
+  .card-container {
+         grid-template-columns: repeat(1, 1fr);
+     }
 
- .collection {
-     margin-top: 100px;
- }
-
- .main-container {
-     display: flex;
-     justify-content: center;
-     margin-top: 30px;
-
- }
-
- .card-container {
-     width: 90%;
-     height: auto;
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     gap: 40px;
-     margin: 10px;
-
- }
-
- .style-card>img {
-     height: auto;
+    .testimonials {
+     padding: 60px 20px;
+     background-color: #5cc4c4ad;
+     text-align: center;
      width: 100%;
-     border-radius: 10px;
+     margin-top: 60px;
+     border-radius: 15px;
+     box-shadow: 4px 5px 11px rgba(0, 0, 0, 0.539);
+     margin-bottom: 80px;
+ }
+
+ .sections {
+    font-size: 30px;
+    margin-bottom: 30px;
 
  }
 
- .style-card>img:hover {
-     box-shadow: 8px 7px 15px rgba(1, 1, 1, 0.853);
-     width: 95%;
- }
+.need-support {
+    width: 100%;
+    flex-direction: column;
 
- .style-card {
-     border: 15px solid rgba(21, 113, 121, 0.535);
-     box-shadow: 8px 7px 15px rgba(198, 113, 192, 0.776);
-     border-radius: 10px;
-     width: auto;
-     padding: 20px;
-     background-color: rgb(255, 255, 255);
- }
-
- .abouts {
-     width: 70%;
-     text-align: start;
-     font-family: "Manrope", sans-serif;
-     font-optical-sizing: auto;
-     font-weight: 600;
-     font-style: 25px;
- }
-
- .price {
-
-     font-family: "Manrope", sans-serif;
-     font-optical-sizing: auto;
-     font-weight: 600;
-     font-style: 30px;
- }
-
- .subtitle-new {
-
-     font-size: 25px;
-     font-weight: 600;
-     text-align: center;
-
-
- }
-
- .heading {
-     font-size: 40px;
-     font-family: "Josefin Sans", sans-serif;
-     font-optical-sizing: auto;
-     text-align: center;
-     color: rgb(255, 113, 61);
-     background-color: rgba(13, 13, 16, 0.908);
-     padding-bottom: 10px;
-     padding-top: 10px;
-     border-radius: 0px;
-     margin: 0 auto;
-
- }
-
- .heading:hover {
-     border-radius: 5PX;
-     font-size: 40px;
-     font-family: "Josefin Sans", sans-serif;
-     font-optical-sizing: auto;
-     box-shadow: 8px 7px 15px rgba(55, 55, 55, 0.776);
- }
-
- .buy {
-
-     background-color: black;
-     color: white;
-     padding: 12px 25px 12px 25px;
-     border: 2px solid rgb(0, 0, 0);
-     border-radius: 5px;
-     font-size: 17px;
-     font-weight: 700;
-
- }
-
- .buy:hover {
-
-     box-shadow: 8px 7px 15px rgba(111, 110, 110, 0.776);
-     font-size: 17px;
-     text-decoration: underline white;
- }
-
- /* media quiyere */
-
- @media screen and (max-width:576px) {
-
-.card-container{
-    grid-template-columns: repeat(1, 1fr);
 }
 
+.support h2{
+    font-size: 25px;
+}
+
+/* footer part */
+
+.footer-part{
+    height: auto;
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.copy {
+    font-size: 22px;
+ }
+
+.icons>a {
+    text-align: center;
+    margin-left: 10px;
+    
+}
+
+.icons>a img{
+    width: 27px;
+}
+
+.big {
+    font-size: 22px;
+}
 
  }
